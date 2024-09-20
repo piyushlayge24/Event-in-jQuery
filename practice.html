@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing table</title>
+<link rel="stylesheet" href="price.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+      $(document).ready(function() {
+      // Hide all pricing details on page load
+      $("p#one, p#two, p#three").hide();  <!-- This line is added -->
+
+      // First button 
+      $("#btn0").click(function() {
+          $("p#one").toggle();
+      });
+
+      // Second button 
+      $("#btn1").click(function() {
+          $("p#two").toggle();
+      });
+
+      // Third button 
+      $("#btn").click(function() {
+          $("p#three").toggle();
+      });
+  });
+</script>
+</head>
+<body>
+    <!-- Basic div  -->
+    <div class="main">   
+    <div class="container">
+        <ul>
+            <li class="head">Basic</li>
+            <li>&#8377; 10 / Month</li>
+        </ul>
+        <button id="btn0" #btn0>Sign up</button>
+        <p id="one"> 
+            *10GB Storage <br>
+            *10 Emails <br>
+            *10 Domains <br>
+            *1GB Bandwidth <br>
+          </p>
+    </div>
+    <!-- standard div  -->
+    <div class="container" id="container11">
+        <ul>
+            <li class="head">Standard</li>
+            <li>&#8377; 50 / Month</li>
+        </ul>
+        <button id="btn1" #btn1>Sign up</button>
+        <p id="two">  
+            *25GB Storage <br>
+            *25 Emails <br>
+            *25 Domains <br>
+            *2GB Bandwidth <br>
+          </p>
+    </div>
+    </div>
+     <!-- Premium div  -->
+    <div class="container3" id="container22">
+        <ul>
+            <li class="head">Premium</li>
+            <li>&#8377; 100 / Month</li>
+        </ul>
+        <button id="btn" #btn>Sign up</button>
+        <p id="three">  
+            *50GB Storage <br>
+            *50 Emails <br>
+            *50 Domains <br>
+            *5GB Bandwidth <br>
+          </p>
+    </div>
+</body>
+</html>
